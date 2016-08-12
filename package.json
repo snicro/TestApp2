@@ -1,0 +1,23 @@
+{
+  "name": "testapp2",
+  "version": "0.0.1",
+  "description": "Test App",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express" : "~4.5.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snicro/TestApp2.git"
+  },
+  "author": "Silviu Stanut",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/snicro/TestApp2/issues"
+  },
+  "homepage": "https://github.com/snicro/TestApp2#readme"
+}

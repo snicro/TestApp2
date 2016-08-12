@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <!-- CSS -->
+    <!--<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootswatch/3.1.1/darkly/bootstrap.min.css">-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    
+    <!-- JS -->
+    <!-- load angular, nganimate, and ui-router -->
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-animate.min.js"></script>
+    <script src="app/app.js"></script>
+    
+</head>
+<body ng-app="formApp">
+
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" ui-sref="appState({page:'home'})">Angular Test App</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a ui-sref="appState({page:'home'})">Home</a></li>
+            <li><a ui-sref="appState({page:'form'})">Add Employee</a></li>
+            <li><a ui-sref="appState({page:'emplist'})">Employee List</a></li>
+            <li><a ui-sref="appState({page:'numberinput'})">Numeric Inputs</a></li>
+            <li><a ui-sref="appState({page:'home'})">About</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- views will be injected here -->
+<div class="container">
+    <div ui-view></div>
+</div>
+
+</body>
+</html>
